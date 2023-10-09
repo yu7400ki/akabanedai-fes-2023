@@ -20,4 +20,4 @@ function countdown() {
   }
 }
 
-//countdown();
+countdown();

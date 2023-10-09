@@ -1,7 +1,11 @@
 html {
 	scroll-behavior: smooth;
 }
-
+​
+body {
+	font-family: Noto Sans JP;
+}
+​
 .title {
 	color: #837165;
 }

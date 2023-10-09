@@ -51,9 +51,9 @@
         </div>
         <div class="flex-none hidden md:block">
           <ul class="menu menu-horizontal px-1 py-0">
-            <li><a href="./about.html">概要</a></li>
-            <li><a href="./kikaku.html">企画一覧</a></li>
-            <li><a href="./timetable.html">タイムテーブル</a></li>
+            <li><a class="hover:bg-[#A2C7B3] hover:text-white" href="./about.html">概要</a></li>
+            <li><a class="hover:bg-[#A2C7B3] hover:text-white" href="./kikaku.html">企画一覧</a></li>
+            <li><a class="hover:bg-[#A2C7B3] hover:text-white" href="./timetable.html">タイムテーブル</a></li>
             <!--<li>
               <details>
                 <summary>その他</summary>
@@ -82,9 +82,9 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </label>
                 <ul class="menu menu-lg bg-base-200 w-56 rounded-box">
-                  <li><a href="./about.html">概要</a></li>
-                  <li><a href="./kikaku.html">企画一覧</a></li>
-                  <li><a href="./timetable.html">タイムテーブル</a></li>
+                  <li><a class="hover:bg-[#A2C7B3]" href="./about.html">概要</a></li>
+                  <li><a class="hover:bg-[#A2C7B3]" href="./kikaku.html">企画一覧</a></li>
+                  <li><a class="hover:bg-[#A2C7B3]" href="./timetable.html">タイムテーブル</a></li>
                 </ul>
                 
               </ul>
@@ -101,121 +101,149 @@
         </div>
       </div>
       
-      <h2 class="text-3xl text-center">Contents</h2>
-      <div class="bg-base-100 container mx-auto m-8" id="contents">
-        <div class="container mx-auto">
-          
-            
-          
-          <div class="block md:hidden">
-            <div class="carousel w-full  md:hidden">
-              <div id="slide1" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide6" class="btn btn-circle">❮</a>
-                  <a href="#slide2" class="btn btn-circle">❯</a>
+      <div class="my-10">
+        <h2 class="text-3xl text-center text-[#FBB03B] font-bold">Contents</h2>
+        <div class="bg-[#FEE4B1] p-6">
+          <div class="container mx-auto m-8" id="contents">
+            <div class="container mx-auto">
+              <div class="block md:hidden">
+                <div class="carousel w-full md:hidden">
+                  <div id="slide1" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle">❮</a>
+                      <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide1" class="btn btn-circle">❮</a>
+                      <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide2" class="btn btn-circle">❮</a>
+                      <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide3" class="btn btn-circle">❮</a>
+                      <a href="#slide5" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide5" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle">❮</a>
+                      <a href="#slide6" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slide6" class="carousel-item relative w-full">
+                    <img src="https://placehold.jp/300x200.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide5" class="btn btn-circle">❮</a>
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide1" class="btn btn-circle">❮</a>
-                  <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-              <div id="slide3" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide2" class="btn btn-circle">❮</a>
-                  <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-              <div id="slide4" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide3" class="btn btn-circle">❮</a>
-                  <a href="#slide5" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-              <div id="slide5" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide4" class="btn btn-circle">❮</a>
-                  <a href="#slide6" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-              <div id="slide6" class="carousel-item relative w-full">
-                <img src="https://placehold.jp/300x200.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide5" class="btn btn-circle">❮</a>
-                  <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:block">
+              <div class="hidden md:block">
 
-            <div class="grid grid-cols-2 gap-4 justify-center">
-                <a class="mx-1 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-                <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-                <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-                <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-                <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-                <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
-            </div>
-          </div>
-          <div class="flex justify-center py-5">
-            <a href="./timetable.html" class="pt-3"><button class="btn">timetable is here</button></a>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="text-3xl text-center">Access</h2>
-      <div class="bg-base-100 container mx-auto m-8">
-        <div class="container mx-auto">
-          <div class="block md:flex ">
-            <div class="w-full md:w-1/2 p-5"><img src="images/map.png" alt="赤羽台キャンパス周辺の地図"></div>
-            
-            <div class="w-full md:w-1/2 p-5">
-              <div class="pb-3">
-                <p>
-                  ■ JR<br>
-                  　「赤羽駅」西口から<br>
-                  　徒歩10分
-                </p>
-                <p>
-                  ■ 東京メトロ南北線・埼玉高速鉄道<br>
-                  　「赤羽岩淵駅」deから<br>
-                  　徒歩10分
-                </p>
-                <p>
-                  ■ 赤51系統・赤57系統<br>
-                  　「赤羽台三丁目」バス停から<br>
-                  　徒歩2分
-                </p>
+                <div class="grid grid-cols-2 gap-4 justify-center">
+                    <a class="mx-1 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                    <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                    <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                    <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                    <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                    <a class="mx-2 my-2" href=""><img class="w-full" src="https://placehold.jp/300x200.png" alt=""></a>
+                </div>
               </div>
-              <hr class="pb-3">
-              <p>　※駐車場・駐輪場はございませんので、<br>
-              　お車でのご来場はご遠慮ください。</p>
-              <div class="text-center">
-                <a class="btn bg-base-100 border-[#34B27E] text-[#34B27E] hover:bg-[#34B27E] hover:text-base-100 mt-5">Google mapはこちら</a>
+              <div class="flex justify-center py-5">
+                <a href="./timetable.html" class="pt-3"><button class="btn">timetable is here</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="bg-base-100 container mx-auto my-8">
-        <div class="container mx-auto p-8">
-          <div>
-            <h2 class="text-3xl title text-center pb-8">ご協賛</h2>
+
+      <div class="my-10">
+        <h2 class="text-3xl text-center text-[#FBB03B] font-bold">Access</h2>
+        <div class="bg-[#FEE4B1] p-6">
+          <div class="container mx-auto m-8">
+            <div class="container mx-auto">
+              <div class="block md:flex">
+                <div class="w-full md:w-1/2"><img src="images/map.png" alt="赤羽台キャンパス周辺の地図"></div>
+                
+                <div class="w-full md:w-1/2 bg-[#FFFFF0]">
+                  <div class="p-3">
+                    <div class="py-5 px-2">
+                      <p>
+                        ■ JR<br>
+                        　「赤羽駅」西口から<br>
+                        　徒歩10分
+                      </p>
+                      <p>
+                        ■ 東京メトロ南北線・埼玉高速鉄道<br>
+                        　「赤羽岩淵駅」から<br>
+                        　徒歩10分
+                      </p>
+                      <p>
+                        ■ 赤51系統・赤57系統<br>
+                        　「赤羽台三丁目」バス停から<br>
+                        　徒歩2分
+                      </p>
+                    </div>
+                    <hr class="px-2">
+                    <div class="py-5 px-2">
+                      <p>　※駐車場・駐輪場はございませんので、<br>
+                      　お車でのご来場はご遠慮ください。</p>
+                      <div class="text-center">
+                        <a class="btn bg-base-100 border-[#34B27E] text-[#34B27E] hover:bg-[#34B27E] hover:text-base-100 mt-5" id="generated-id-1696855136495-q2teg83rc">Google mapはこちら</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            <a href="" class="border dark:border-slate-700 dark:bg-white p-2 h-20 flex items-center justify-center tooltip"
-              data-tip="会社名 様">
-              <img class="h-full object-contain" src="images/logo.png" />
-            </a>
-            </a>
+        </div>
+      </div>
+
+      <div class="my-10">
+        <h2 class="text-3xl text-center text-[#FBB03B] font-bold">Others</h2>
+        <div class="bg-[#FEE4B1] bg-gradient-to-b from-[#FEE4B1] to-[#A2C7B3] p-6">
+          <div class="container mx-auto m-8">
+            <div class="container mx-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-3xl text-center text-[#FBB03B] font-bold">Support</h2>
+        <div class="bg-[#A2C7B3] p-6">
+          <div class="container mx-auto m-8">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <a href="" class="border dark:border-slate-700 bg-white dark:bg-white p-2 h-20 flex items-center justify-center tooltip"
+                  data-tip="会社名 様">
+                  <img class="h-full object-contain" src="images/logo.png" />
+                </a>
+                <a href="" class="border dark:border-slate-700 bg-white dark:bg-white p-2 h-20 flex items-center justify-center tooltip"
+                data-tip="会社名 様">
+                <img class="h-full object-contain" src="images/logo.png" />
+                </a>
+                <a href="" class="border dark:border-slate-700 bg-white dark:bg-white p-2 h-20 flex items-center justify-center tooltip"
+                data-tip="会社名 様">
+                <img class="h-full object-contain" src="images/logo.png" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

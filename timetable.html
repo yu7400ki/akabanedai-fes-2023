@@ -1,110 +1,150 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
-  <head prefix="og: http://ogp.me/ns#">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
-    <link rel="canonical" href="https://akabanedai-fes.com/" />
-    <link rel="stylesheet" href="src/index.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>タイムテーブル | 赤羽台祭</title>
-    <meta
-      name="description"
-      content="東洋大学赤羽台キャンパス大学祭「赤羽台祭」は、2022/11/04(土), 05(日)に開催！"
-    />
-    <meta name="keywords" content="東洋大学,大学祭,学園祭,赤羽台祭,赤羽" />
-    <meta property="og:url" content="https://akabanedai-fes.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="赤羽台祭の公式サイトはこちら！" />
-    <meta
-      property="og:description"
-      content="東洋大学赤羽台キャンパス大学祭「赤羽台祭」は、2023/11/04(土), 05(日)に開催！"
-    />
-    <meta property="og:site_name" content="赤羽台祭" />
-    <meta
-      property="og:image"
-      content="https://akabanedai-fes.com/02/images/ogp.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@akabanedaifes" />
-  </head>
-  <body>
-    <header>
-      <div class="navbar bg-base-100 shadow fixed top-0 left-0 right-0 z-50">
-        <div class="flex-1">
-          <a href="./index.html">
-            <img class="h-10 px-2 dark:hidden" src="images/logo.png" />
-            <img class="h-10 px-2 hidden dark:block" src="images/logo-white.png" />
-          </a>
-        </div>
-        <div class="flex-none hidden md:block">
-          <ul class="menu menu-horizontal px-1 py-0">
-            <li><a href="./about.html">概要</a></li>
-            <li><a href="./kikaku.html">企画一覧</a></li>
-            <li><a href="./timetable.html">タイムテーブル</a></li>
-            <!--<li>
-              <details>
-                <summary>その他</summary>
-                <ul class="p-2 bg-base-100">
-                  <li><a>タイムテーブル</a></li>
-                  <li><a>Link 2</a></li>
-                </ul>
-              </details>
-            </li>-->
-          </ul>
-        </div>
-        <div class="flex-none md:hidden">
-          <div class="drawer drawer-end">
-            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-              <!-- Page content here -->
-              <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-              </label>
-            </div> 
-            <div class="drawer-side">
-              <label for="my-drawer" class="drawer-overlay"></label>
-              <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                <!-- Sidebar content here -->
-                <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                </label>
-                <ul class="menu menu-lg bg-base-200 w-56 rounded-box">
-                  <li><a href="./about.html">概要</a></li>
-                  <li><a href="./kikaku.html">企画一覧</a></li>
-                  <li><a href="./timetable.html">タイムテーブル</a></li>
-                </ul>
-                
-              </ul>
-            </div>
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+  <link rel="canonical" href="https://akabanedai-fes.com/" />
+  <link rel="stylesheet" href="src/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>タイムテーブル | 赤羽台祭</title>
+  <meta name="description" content="東洋大学赤羽台キャンパス大学祭「赤羽台祭」は、2022/11/04(土), 05(日)に開催！" />
+  <meta name="keywords" content="東洋大学,大学祭,学園祭,赤羽台祭,赤羽" />
+  <meta property="og:url" content="https://akabanedai-fes.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="赤羽台祭の公式サイトはこちら！" />
+  <meta property="og:description" content="東洋大学赤羽台キャンパス大学祭「赤羽台祭」は、2023/11/04(土), 05(日)に開催！" />
+  <meta property="og:site_name" content="赤羽台祭" />
+  <meta property="og:image" content="https://akabanedai-fes.com/02/images/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@akabanedaifes" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar bg-[#FFFFF0] shadow-lg fixed top-0 left-0 right-0 z-50">
+      <div class="flex-1">
+        <div class="ms-3">
+          <p class="text-sm flex items-center justify-center h-full">
+          <div class="pl-4">
+            赤羽台祭まであと
+            <span class="countdown font-mono text-xl px-2" id="days">
+              <span style="--value: 100"></span>
+            </span>
+            日
+            </p>
           </div>
-        </div>      
+
+        </div>
       </div>
-    </header>
-    <main>
-      <div class="container mx-auto p-4 mt-16">
-        <div class="text-sm breadcrumbs">
-          <ul>
-            <li><a href="./index.html">TOPページ</a></li> 
-            <li>タイムテーブル</li> 
-          </ul>
+      <div class="flex-none hidden md:block">
+        <ul class="menu menu-horizontal px-1 py-0">
+          <li><a class="hover:bg-[#E5E5D8]" href="./about.html">概要</a></li>
+          <li><a class="hover:bg-[#E5E5D8]" href="./kikaku.html">企画一覧</a></li>
+          <li><a class="hover:bg-[#E5E5D8]" href="./timetable.html">タイムテーブル</a></li>
+          <!--<li>
+                  <details>
+                    <summary>その他</summary>
+                    <ul class="p-2 bg-base-100">
+                      <li><a>タイムテーブル</a></li>
+                      <li><a>Link 2</a></li>
+                    </ul>
+                  </details>
+                </li>-->
+        </ul>
+      </div>
+      <div class="flex-none md:hidden">
+        <div class="drawer drawer-end">
+          <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <!-- Page content here -->
+            <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </label>
+          </div>
+          <div class="drawer-side">
+            <label for="my-drawer" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+              <!-- Sidebar content here -->
+              <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </label>
+              <ul class="menu menu-lg bg-base-200 w-56 rounded-box">
+                <li><a class="hover:bg-[#C6C6C6]" href="./about.html">概要</a></li>
+                <li><a class="hover:bg-[#C6C6C6]" href="./kikaku.html">企画一覧</a></li>
+                <li><a class="hover:bg-[#C6C6C6]" href="./timetable.html">タイムテーブル</a></li>
+              </ul>
+
+            </ul>
+          </div>
         </div>
-        <div class="py-2 px-2">
-          <h1 class="text-3xl title">タイムテーブル</h1>
+      </div>
+    </div>
+  </header>
+  <main class="bg-[#FFFFF0]">
+    <div class="container mx-auto p-4 mt-16">
+      <div class="text-sm breadcrumbs">
+        <ul>
+          <li><a href="./index.html">TOPページ</a></li>
+          <li>タイムテーブル</li>
+        </ul>
+      </div>
+      <div class="py-2 px-2">
+        <h1 class="text-3xl title">タイムテーブル</h1>
+        <div class="py-4 min-h-screen whitespace-pre-line">
+          <p>準備中</p>
         </div>
-        <!--<div class="join">
+      </div>
+      <!--<div class="join">
           <button class="btn btn-outline btn-success btn-wide join-item">Day 1</button>
           <button class="btn btn-outline btn-success btn-wide join-item">Day 2</button>
         </div>-->
+    </div>
+  </main>
+  <footer class="footer p-10 bg-[#CADCD2]  text-base-content">
+    <nav>
+      <a class="link link-hover" href="about.html">大学祭について</a>
+      <a class="link link-hover" href="kikaku.html">企画</a>
+      <a class="link link-hover" href="timetable.html">タイムテーブル</a>
+    </nav>
+  </footer>
+  <footer class="footer px-10 py-4 bg-[#CADCD2] text-base-content border-base-300">
+    <aside class="items-center grid-flow-col">
+      <p>© 2023 赤羽台祭実行委員会</p>
+    </aside>
+    <nav class="md:place-self-center md:justify-self-end">
+      <div class="grid grid-flow-col gap-4">
+        <a href="https://x.com/akabanedaifes"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg></a>
       </div>
+    </nav>
+  </footer>
+</body>
+<script src="src/index.js"></script>
 
-  </body>
-  <script src="src/index.js"></script>
 </html>

@@ -12,3 +12,8 @@ body {
 p {
 	word-wrap:break-word;
 }
+
+#sponsors_texts {
+	word-break: keep-all;
+	overflow-wrap: break-word;
+}

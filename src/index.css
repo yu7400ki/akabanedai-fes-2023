@@ -17,3 +17,7 @@ p {
 	word-break: keep-all;
 	overflow-wrap: break-word;
 }
+
+#about_held {
+	grid-template-columns: 1fr 3fr;
+}

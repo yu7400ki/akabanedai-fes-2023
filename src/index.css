@@ -18,6 +18,3 @@ p {
 	overflow-wrap: break-word;
 }
 
-#about_held {
-	grid-template-columns: 1fr 3fr;
-}
